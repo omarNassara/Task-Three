@@ -1,0 +1,165 @@
+body {
+    background: url('../img/home3.jpg') no-repeat center center/cover;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.navbar {
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-nav {
+    gap: 30px;
+}
+.navbar-nav .nav-link.active {
+    color: red !important;
+    font-weight: bold;
+}
+.navbar-nav .movies-link {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+.navbar.scrolled .movies-link {
+    color: black !important;
+}
+.navbar-nav .nav-link {
+    color: red;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+}
+.navbar-nav .nav-link:not(.active)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: width 1s ease-in-out;
+}
+.navbar-nav .nav-link:not(.active):hover::after {
+    width: 100%;
+}
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+}
+.btn-custom {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+h1 {
+    font-size: 5rem;
+}
+.btn-custom:hover {
+    background-color: red !important;
+    color: white !important;
+}
+.logo {
+    font-weight: bold;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 20px;
+}
+.navbar-toggler {
+    border-color: white;
+}
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+#movies
+{
+    padding-top: 49px;
+}
+.items
+{
+    margin-right: 0;
+}
+.card
+{
+    border: none;
+}
+.card-img-top {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+}
+.text1 {
+    width: 84%;
+    height: 2px;
+    background-color: brown;
+    margin-bottom: 35px;
+}
+.card-img-top {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+.coming-soon
+{
+    padding-top: 90px;
+}
+
+footer {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d0d0d;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+footer {
+    width: 100%;
+    height: 75vh;
+}
+.subscribe-box {
+    max-width: 400px;
+    margin: auto;
+}
+.social-icons a {
+    background: white;
+    color: red;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.social-icons a:hover {
+    background: red;
+    color: white;
+}
+.footer-text .footer-logo {
+    color: red;
+    font-weight: bold;
+}
